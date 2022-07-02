@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с текстом и шрифтами</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+ 
+<div class="container"> 
+    <div class="link-goback"><a href="../../index.html">Назад</a></div> 
+    <h1 id="fonts-n-work">Работа с текстом и шрифтами</h1>
+    <p>Подключение шрифта происходит при помощи следующей конструкции:</p>
+    <div class="code-fragment"><pre><code>@font-face { 
+  font-family: "Roboto Regular"; br
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+      
+  body {
+  font-family: "Roboto Regular", sans-serif;
+}</code></pre></div>
+    <p>"src: url("путь к файлу")"</p>
+    <h2>Стиль шрифта</h2>
+    <p>Помимо обычного начертания, CSS позволяет задать и другой вариант отображения шрифта — курсивный. Для этого используется свойство <span class="highlight">font-style</span>, которое может принимать одно из трёх значений:</p>
+    <ul>
+        <ol><span class="highlight">normal</span> — стандартное значение.</ol>
+        <ol><span class="highlight">italic</span> — курсивное начертание.</ol>
+        <ol><span class="highlight">oblique</span> — тоже курсивное начертание.</ol>
+    </ul>
+
+    <h2>Строчные символы</h2>
+    <p>С помощью CSS можно задать такой вид строчных символов как «Капитель».</p>
+    <p>Капитель устанавливается с помощью свойства <span class="highlight">font-variant</span>. У него возможны два значения:</p>
+    <ul>
+        <ol><span class="highlight">normal</span> — стандартная стилистика строчных символов.</ol>
+        <ol><span class="highlight">small-caps</span> — капитель.</ol>
+    </ul>
+</div>
+</body>
+</html>
